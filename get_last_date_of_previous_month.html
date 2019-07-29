@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script>
+var date = new Date();
+var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+</script>
+</head>
+<body>
+<script>
+var fd = Date.today().clearTime().moveToFirstDayOfMonth();
+var firstday = fd.toString("MM/dd/yyyy");
+alert(firstday);
+</script>
+</body>
+</html>

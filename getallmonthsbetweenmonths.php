@@ -13,3 +13,10 @@ $date = date ("Y-m-d", strtotime("+1 month", strtotime($date)));
 }
 date("M Y", strtotime($date));
 ?>
+  <?php
+  
+  //All months
+for($m=1; $m<=12; ++$m){
+    echo date('F', mktime(0, 0, 0, $m, 1)).'<br>';
+}
+?>
